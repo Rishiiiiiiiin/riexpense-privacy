@@ -52,6 +52,12 @@
 <ul>
   <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> – required for loading ads (AdMob) and connectivity checks.</li>
 </ul>
+ Notification Access Disclosure: RiExpense uses the NotificationListenerService to automatically detect and import transaction-related information from bank and payment app notifications (e.g., SMS, UPI apps).
+
+Why we need this: To provide a seamless expense tracking experience without manual entry.
+What we collect: Only transaction data (amount, sender name, description).
+What we do NOT collect: We do not read personal messages, OTPs, or any non-financial notifications.
+Data Storage: All data processed from notifications is stored locally on your device. We do not transmit or share this data with any third-party servers.
 
 <h2>Your Choices</h2>
 <ul>
